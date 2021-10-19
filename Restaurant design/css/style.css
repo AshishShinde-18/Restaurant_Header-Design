@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body{
+    color: black;
+    background-color: #fafafa;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing:antialiased;
+}
+
+.container{
+    max-width: 1200px;
+    background-position: center;
+    background-size: cover;
+    padding: 0 5%;
+    margin: 0 auto;
+    display: flex;
+}
+/* 
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+} */
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+.logo{
+    padding: 2rem 0;
+}
+
+.top{
+    display: flex;
+    padding: 2rem 7rem;
+}
+.left{
+    margin: 3rem 0;
+    align-items: center;
+    display: flex;
+}
+.right{
+    margin: 4rem 0;
+    padding: 0rem;
+    width: 40%;
+    color: #8d8686;
+}
+.top .left h1{
+    font-size: 3.5rem;
+}
+
+.with-underline{
+    
+    margin-bottom: 40px;
+}
+
+.bottom{
+    padding: 0rem 6rem;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 25%);
+    padding: 0rem 0rem;
+}
+img{
+    width: 75%;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 20px;
+}
+.card{
+    background-color: white;
+    display: flex;
+    margin: 0rem 0.75rem;
+    flex-direction: column;
+    padding-right: rem;
+    box-shadow: 7px 17px 55px -20px grey;
+    text-align: center;
+    height: 35vh;
+    border-radius: 10%;
+}
+.card:hover{
+    box-shadow: 4px 2px 10px grey;
+    transition: ease 1s;
+}
+h1{
+   font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    font-size: xxx-large;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #8d8686;
+}
+
+.logo h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: xx-large;
+}
+
+.navbar ul li{
+    padding: 1rem 0;
+}
+a:hover{
+    text-decoration: dashed;
+}
+
+.primary{
+    width: 118px;
+    color: #f1e6e6;
+    font-size: 16px;
+    padding: 8px 0;
+    background: #f10909;
+    margin: 2.5rem 0;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    ;
+}
+.primary:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid;
+    transition: ease-in-out 1s;
+}
+label{
+    font-size: medium;
+    font-weight: 600;
+}
+hr{
+    margin: 2rem 0;
+    padding: 1px 0;
+    background: red;
+    border: none;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:1500px){
+    .bottom-right{
+        display: none;
+    }
+    .right{
+        margin: 4rem 0;
+        padding: 0rem;
+        width: 40%;
+        color: #8d8686;
+    }
+}
+
+@media (max-width:1200px){
+    header #main-nav{
+        display: none;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 35%);
+        grid-row-gap: 1.5rem;
+        padding: 0rem 0rem;
+    }
+    .bottom-right{
+        display: none;
+    }
+    .right{
+        margin: 4rem 0;
+        padding: 0rem;
+        width: 40%;
+        color: #8d8686;
+    }
+   
+
+}
+@media (max-width:990px){
+    .wrapper{
+        grid-template-columns: repeat(2, 50%);
+        grid-row-gap: 1.5rem;
+    }
+    .container{
+        flex-direction: column;
+    }
+    ul{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo h1{
+        margin: 0 3rem;
+    }
+    .top {
+        padding: 0rem 1rem;
+    }
+    .top .left h1 {
+        font-size: 2.5rem;
+    }
+    .cart img{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+    .bottom {
+        padding: 0rem 1rem;
+    }
+    .right{
+        margin: 4rem 0;
+        padding: 0rem;
+        width: 40%;
+        color: #8d8686;
+    }
+    .primary {
+        width: 100px;
+        margin: 3.5rem 0;
+    }
+}
+
+@media (max-width:730px){
+    .right{
+        display: none;
+    }
+    .bottom-right {
+        display: flex;
+        margin: 1rem 0;
+        padding: 1.75rem;
+        font-size: larger;
+        color: #8d8686;
+        line-height: 1.5rem;
+    }
+
+}
+@media (max-width:400px){
+    .wrapper{
+        grid-template-columns: repeat(2, 50%);
+    }
+    .top{
+        padding: 0rem 1rem;
+        display: flex;
+    flex-direction: column;
+    }
+    .top .left h1 {
+        font-size: 2rem;
+    }
+    .bottom {
+        padding: 0rem 0rem;
+    }
+    .right{
+        display: none;
+    }
+    .logo{
+        padding-top:1rem;
+    }
+    .logo h1{
+            font-size: x-large;        
+    }
+    
+    .bottom-right {
+        display: flex;
+        margin: 1rem 0;
+        padding: 1.75rem;
+        font-size: larger;
+        color: #8d8686;
+        line-height: 1.5rem;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+    .primary{
+        width: 90px;
+    font-size: 14px;
+    padding: 5px 0;
+    margin: 2rem 2rem;
+    }
+    
+}
